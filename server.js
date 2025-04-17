@@ -13,7 +13,7 @@ const personRoutes = require('./routes/personRoutes');
 app.use('/person',personRoutes);
 app.use('/menu',menuRoutes);
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;      //if env does not have port then give 3000
 
 app.listen(PORT,()=>{
     console.log('listening at',PORT);
